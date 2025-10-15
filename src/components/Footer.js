@@ -1,0 +1,1 @@
+import React from "react";\n\nconst Footer = () => (\n  <footer className="footer">\n    <p>\n      &copy; {new Date().getFullYear()} pkDaSlayer &mdash; Find me on GitHub!\n    </p>\n  </footer>\n);\n\nexport default Footer;

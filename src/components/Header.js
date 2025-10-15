@@ -1,0 +1,1 @@
+import React from "react";\n\nconst Header = () => (\n  <header className="header">\n    <h1>pkDaSlayer</h1>\n    <h2>SAFe Scrum Master • Agile Coach • Product Owner</h2>\n    <p>\n      Technically-inclined leader passionate about delivering value through Agile excellence. \n      Open to new opportunities!\n    </p>\n  </header>\n);\n\nexport default Header;
