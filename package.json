@@ -1,1 +1,27 @@
-{"name": "pkdaslayer-portfolio","version": "1.0.0","private": true,"description": "Portfolio website for pkDaSlayer","author": "pkDaSlayer","license": "MIT","repository": {"type": "git","url": "https://github.com/pkDaSlayer/pkdaslayer-portfolio.git"},"dependencies": {"react": "^18.0.0","react-dom": "^18.0.0","react-scripts": "5.0.1"},"scripts": {"start": "react-scripts start","build": "react-scripts build","test": "react-scripts test","eject": "react-scripts eject"},"engines": {"node": ">=16.0.0","npm": ">=7.0.0"}}
+{
+  "name": "pkdaslayer-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Portfolio website for pkDaSlayer",
+  "author": "pkDaSlayer",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pkDaSlayer/pkdaslayer-portfolio.git"
+  },
+  "dependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-scripts": "5.0.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=7.0.0"
+  }
+}
