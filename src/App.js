@@ -1,1 +1,12 @@
-import React, { useState } from "react";\nimport Header from "./components/Header";\nimport Skills from "./components/Skills";\nimport Contact from "./components/Contact";\nimport Footer from "./components/Footer";\n\nfunction App() {\n  const [messages, setMessages] = useState([]);\n\n  const handleContactSubmit = (message) => {\n    setMessages([...messages, message]);\n    // In a real app, you would send this to a backend or service.\n  };\n\n  return (\n    <div className="App">\n      <Header />\n      <Skills />\n      <Contact onSubmit={handleContactSubmit} />\n      <Footer />\n    </div>\n  );\n}\n\nexport default App;
+import React from "react";
+
+function App() {
+  return (
+    <div className="App">
+      <h1>Hello, React!</h1>
+      <p>Your React app is working perfectly 🎉</p>
+    </div>
+  );
+}
+
+export default App;
