@@ -1,1 +1,57 @@
-import React, { useState } from "react";\n\nconst Contact = ({ onSubmit }) => {\n  const [form, setForm] = useState({ name: "", email: "", message: "" });\n  const [submitted, setSubmitted] = useState(false);\n\n  const handleChange = (e) => {\n    setForm({ ...form, [e.target.name]: e.target.value });\n  };\n\n  const handleSubmit = (e) => {\n    e.preventDefault();\n    onSubmit(form);\n    setSubmitted(true);\n    setForm({ name: "", email: "", message: "" });\n  };\n\n  return (\n    <section className="contact">\n      <h3>Contact Me</h3>\n      {submitted ? (\n        <p className="success">Thanks for reaching out! I’ll review your message soon.</p>\n      ) : (\n        <form onSubmit={handleSubmit}>\n          <input\n            name="name"\n            placeholder="Your Name"\n            value={form.name}\n            onChange={handleChange}\n            required\n            autoComplete="off"\n          />\n          <input\n            name="email"\n            type="email"\n            placeholder="Your Email"\n            value={form.email}\n            onChange={handleChange}\n            required\n            autoComplete="off"\n          />\n          <textarea\n            name="message"\n            placeholder="Your Message"\n            value={form.message}\n            onChange={handleChange}\n            required\n            rows={5}\n          />\n          <button type="submit">Send Message</button>\n        </form>\n      )}     \n    </section>\n  );\n};\n\nexport default Contact;
+import React, { useState } from "react";
+
+const Contact = ({ onSubmit }) => {
+  const [form, setForm] = useState({ name: "", email: "", message: "" });
+  const [submitted, setSubmitted] = useState(false);
+
+  const handleChange = (e) => {
+	setForm({ ...form, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = (e) => {
+	e.preventDefault();
+	onSubmit(form);
+	setSubmitted(true);
+	setForm({ name: "", email: "", message: "" });
+  };
+
+  return (
+	<section className="contact">
+	  <h3>Contact Me</h3>
+	  {submitted ? (
+		<p className="success">Thanks for reaching out! I'll review your message soon.</p>
+	  ) : (
+		<form onSubmit={handleSubmit}>
+		  <input
+			name="name"
+			placeholder="Your Name"
+			value={form.name}
+			onChange={handleChange}
+			required
+			autoComplete="off"
+		  />
+		  <input
+			name="email"
+			type="email"
+			placeholder="Your Email"
+			value={form.email}
+			onChange={handleChange}
+			required
+			autoComplete="off"
+		  />
+		  <textarea
+			name="message"
+			placeholder="Your Message"
+			value={form.message}
+			onChange={handleChange}
+			required
+			rows={5}
+		  />
+		  <button type="submit">Send Message</button>
+		</form>
+	  )}     
+	</section>
+  );
+};
+
+export default Contact;
