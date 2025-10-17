@@ -1,1 +1,15 @@
-import React from "react";\n\nconst Skills = () => (\n  <section className="skills">\n    <h3>Skills & Expertise</h3>\n    <ul>\n      <li>SAFe Scrum Mastery</li>\n      <li>Agile Coaching & Transformation</li>\n      <li>Product Ownership</li>\n      <li>Technical Background (Software & Web)</li>\n      <li>Facilitation & Stakeholder Engagement</li>\n      <li>Continuous Improvement</li>\n    </ul>\n  </section>\n);\n\nexport default Skills;
+const Skills = () => (
+  <section className="skills">
+	<h3>Skills & Expertise</h3>
+	<ul>
+	  <li>SAFe Scrum Mastery</li>
+	  <li>Agile Coaching & Transformation</li>
+	  <li>Product Ownership</li>
+	  <li>Technical Background (Software & Web)</li>
+	  <li>Facilitation & Stakeholder Engagement</li>
+	  <li>Continuous Improvement</li>
+	</ul>
+  </section>
+);
+
+export default Skills;
